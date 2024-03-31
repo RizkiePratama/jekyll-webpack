@@ -29,17 +29,17 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              ident: 'postcss',
+              postcssOptions: {
+                plugins: [
+                  require('tailwindcss'),
+                  require('autoprefixer'),
+                ],
+              },
               sourceMap: true,
-              plugins: [
-                require('tailwindcss'),
-                require('autoprefixer'),
-              ],
             },
           },
           {
             loader: 'sass-loader',
-            ident: 'sass',
             options: { sourceMap: true }
           }
         ]

@@ -38,7 +38,7 @@ module Jekyll
 
     def self.webpack_exec(site_dest)
       stdout, stderr, status = Open3.capture3(
-        "../node_modules/.bin/webpack",
+        "npx webpack",
         chdir: File.expand_path(site_dest)
       )
 

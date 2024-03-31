@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-webpack (0.2.5)
+    jekyll-webpack (0.2.7)
       jekyll
       listen
 
@@ -119,4 +119,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   2.2.3
+   2.4.20
